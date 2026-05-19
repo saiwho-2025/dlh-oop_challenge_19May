@@ -1,18 +1,7 @@
 #!/usr/bin/python3
-"""" This file contains 4 classes for the challenge"""
+"""" This file contains the Manager Class"""
 
-
-class PatientRecord:
-    """"SuperClass"""
-    pass
-
-
-class ICUPatient(PatientRecord):
-    pass
-
-
-class Outpatient(PatientRecord):
-    pass
+from PatientClasses import *
 
 
 class Manager:

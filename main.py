@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-from ChallengeClasses import *
+from PatientClasses import *
+from Manager import Manager
 
 
 def main():
