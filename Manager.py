@@ -2,6 +2,7 @@
 """" This file contains the Manager Class"""
 
 from PatientClasses import *
+import json
 
 
 class Manager:
@@ -16,3 +17,10 @@ class Manager:
         """Adds the patient to the list"""
         self.patients.append(PatientRecord)
         print("Patient admited")
+
+    def generate_nurse_dashboard(self):
+        """returns a JSON dashboard """
+        dashboard = {
+            "patients": [patient.__dict__ for patient in self.patients]
+        }
+        return json.dumps(dashboard)
